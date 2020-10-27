@@ -6,17 +6,23 @@
   <name>Jw Fetch n Store</name>
   <description>A simple app that fetches n stores info into excel</description>
   <properties>
-   	<maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+   	<maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
-<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-client -->
-<dependency>
-    <groupId>org.eclipse.jetty</groupId>
-    <artifactId>jetty-client</artifactId>
-    <version>9.4.32.v20200930</version>
-</dependency>
 
+<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.3.3</version>
+			<scope>test</scope>
+		</dependency>
   	
   </dependencies>
 </project>

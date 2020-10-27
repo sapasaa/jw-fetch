@@ -8,15 +8,18 @@ import java.util.ArrayList;
 
 public class FetchUrlsApp {
 	
-	private Extractor ext;
 	private final static String BASEURL = "https://www.jw.org/en/library/bible/study-bible/books/json/data/";
-	private int param1 = 1000000;
-	private int param2 = 1000999;
+	private Extractor ext;
+	private int param1;
+	private int param2;
 	
 	 
-	public FetchUrlsApp(Extractor ext) {
+	
+	public FetchUrlsApp(Extractor ext, int param1, int param2) {
 		super();
 		this.ext = ext;
+		this.param1 = param1;
+		this.param2 = param2;
 	}
 
 	public void start() {
@@ -40,7 +43,7 @@ public class FetchUrlsApp {
 				updateParams();
 			}
 			
-			if(param1>=67000000) {
+			if(this.getParam1()>=67000000) {
 				break;
 			}
 			
@@ -87,6 +90,24 @@ public class FetchUrlsApp {
 		param2 = param2 + 1000;
 		return BASEURL + param1 + "-" + param2;
 	}
+
+	public int getParam1() {
+		return param1;
+	}
+
+	public int getParam2() {
+		return param2;
+	}
+
+	public void setParam1(int param1) {
+		this.param1 = param1;
+	}
+
+	public void setParam2(int param2) {
+		this.param2 = param2;
+	}
+	
+	
 
 
 }
