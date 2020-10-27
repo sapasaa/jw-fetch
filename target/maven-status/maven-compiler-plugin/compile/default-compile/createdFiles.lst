@@ -1,0 +1,8 @@
+com\fdm\App\Parser.class
+com\fdm\App\Storer.class
+com\fdm\Generate\FetchUrlAppMain.class
+com\fdm\Generate\FetchUrlsApp.class
+com\fdm\Generate\Extractor.class
+com\fdm\App\AppMain.class
+com\fdm\App\Fetcher.class
+com\fdm\App\App.class

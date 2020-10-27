@@ -15,6 +15,12 @@ public class App {
 		this.pars = pars;
 		this.st = st;
 	}
+
+
+	public void start() {
+		System.out.println("App starting....");
+		
+	}
 	
 	
 

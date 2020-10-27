@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Jw Fetch n Store</name>
   <description>A simple app that fetches n stores info into excel</description>
+  <properties>
+   	<maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
   <dependencies>
 <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-client -->
 <dependency>
